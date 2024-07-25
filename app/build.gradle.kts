@@ -33,6 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.14"
+    }
 }
 
 dependencies {
@@ -42,6 +50,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.material3.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -53,12 +62,19 @@ dependencies {
     implementation(libs.coil)
     implementation(libs.json)
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.converter.gson)
+    implementation(libs.picasso)
 
-    implementation("com.squareup.picasso:picasso:2.71828")
+    // Compose
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.ui)
+    implementation (libs.androidx.material)
+    implementation (libs.androidx.ui.tooling.preview)
+    implementation (libs.androidx.lifecycle.viewmodel.compose.v100alpha07)
+    implementation (libs.androidx.runtime.livedata)
+    debugImplementation(libs.androidx.ui.tooling)
 
 }
