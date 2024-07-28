@@ -45,20 +45,17 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.recyclerview)
 
     // Retrofit
     implementation(libs.serialization.retrofit)
     implementation(libs.retrofit)
     implementation(libs.okhttp3)
-    implementation(libs.coil)
     implementation(libs.json)
+    implementation(libs.converter.gson)
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-
-    implementation("com.squareup.picasso:picasso:2.71828")
+    //Picasso
+    implementation(libs.picasso)
 
 }
