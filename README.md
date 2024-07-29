@@ -29,7 +29,7 @@ This project demonstrates the use of Jetpack Compose in an Android application t
 - [Kotlin](https://kotlinlang.org/)
 - [Jetpack Compose](https://developer.android.com/jetpack/compose)
 - [Retrofit](https://square.github.io/retrofit/) for network requests
-- [Coil](https://coil-kt.github.io/coil/) for image loading
+- [Picasso](https://github.com/square/picasso) for image loading
 - [Picsum API](https://picsum.photos/)
 
 ## Getting Started
